@@ -20,5 +20,4 @@ namespace AP1
             this.Cnpj = Cnpj;
         }
     }
-
 }

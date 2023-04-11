@@ -7,9 +7,8 @@ namespace AP1
 {
     public class ProdutoSimples : Produto
     {
-        public ProdutoSimples(int id, long codBarras, string nome, string valor, string marca, Fornecedor fornecedor) : base(0, codBarras, nome, valor, marca, fornecedor)
+        public ProdutoSimples(long codBarras, string nome, string valor, string marca, Fornecedor fornecedor) : base(codBarras, nome, valor, marca, fornecedor)
         {
-            this.id = id;
             this.CodBarras = codBarras;
             this.Nome = nome;
             this.Valor = valor;

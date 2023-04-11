@@ -9,7 +9,7 @@ namespace AP1
     {
         private static List<Produto> _produtos = new List<Produto>();
 
-        public ProdutoRepositorio(long codBarras, string nome, string valor, string marca, Fornecedor fornecedor) : base(0, codBarras, nome, valor, marca, fornecedor)
+        public ProdutoRepositorio(long codBarras, string nome, string valor, string marca, Fornecedor fornecedor) : base(codBarras, nome, valor, marca, fornecedor)
         { }
 
         public static void Adicionar()
@@ -36,7 +36,7 @@ namespace AP1
 
             Fornecedor fornecedor = new Fornecedor(nomeFornecedor, cnpj, nome);
 
-            ProdutoSimples produtoSimples = new ProdutoSimples(0, codBarras, nome, valor.ToString(), marca, fornecedor);
+            ProdutoSimples produtoSimples = new ProdutoSimples(codBarras, nome, valor.ToString(), marca, fornecedor);
 
             _produtos.Add(produtoSimples);
         }
