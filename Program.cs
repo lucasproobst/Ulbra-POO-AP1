@@ -4,8 +4,8 @@ namespace AP1
 {
     public class Program
     {
-/*         private static readonly ProdutoRepositorio produtoRepositorio = new ProdutoRepositorio();
-        private static readonly FornecedorRepositorio fornecedorRepositorio = new FornecedorRepositorio(); */
+        /*         private static readonly ProdutoRepositorio produtoRepositorio = new ProdutoRepositorio();
+                private static readonly FornecedorRepositorio fornecedorRepositorio = new FornecedorRepositorio(); */
         private static readonly CompraRepositorio compraRepositorio = new CompraRepositorio();
 
         public static void Main(string[] args)
@@ -61,16 +61,16 @@ namespace AP1
                         Console.WriteLine("Informe o nome do fornecedor:");
                         string nomeFornecedor = Console.ReadLine();
 
-                        Fornecedor fornecedor = FornecedorRepositorio.ObterPorId(1);
+                        /* Fornecedor fornecedor = FornecedorRepositorio.ObterPorId(1); */
                         /* Fornecedor fornecedor1 =  FornecedorRepositorio.get(); */
 
                         Compra compra = new Compra(1, data, produto);
 
-/* 
-                        CompraRepositorio.Adicionar(new Compra(CompraRepositorio.ObterCompraPorId(), data, produto, fornecedor));
-                        CompraRepositorio.
+                        compra.RealizarCompra(produto);
 
-                        Console.WriteLine("Compra realizada com sucesso!"); */
+                        Console.WriteLine("Compra realizada com sucesso!");
+
+                        compra.ListarCompras();
                         break;
 
                     case 0:

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lucasprobst/Desktop/AP1/AP1.csproj": {}
+    "/Users/lucasprobst/Desktop/AP1/Ulbra-POO-AP1/AP1.csproj": {}
   },
   "projects": {
-    "/Users/lucasprobst/Desktop/AP1/AP1.csproj": {
+    "/Users/lucasprobst/Desktop/AP1/Ulbra-POO-AP1/AP1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lucasprobst/Desktop/AP1/AP1.csproj",
+        "projectUniqueName": "/Users/lucasprobst/Desktop/AP1/Ulbra-POO-AP1/AP1.csproj",
         "projectName": "AP1",
-        "projectPath": "/Users/lucasprobst/Desktop/AP1/AP1.csproj",
+        "projectPath": "/Users/lucasprobst/Desktop/AP1/Ulbra-POO-AP1/AP1.csproj",
         "packagesPath": "/Users/lucasprobst/.nuget/packages/",
-        "outputPath": "/Users/lucasprobst/Desktop/AP1/obj/",
+        "outputPath": "/Users/lucasprobst/Desktop/AP1/Ulbra-POO-AP1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lucasprobst/.nuget/NuGet/NuGet.Config"

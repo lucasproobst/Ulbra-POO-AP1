@@ -22,5 +22,9 @@ namespace AP1
             this.Fornecedor = fornecedor;
         }
 
+        public static implicit operator List<object>(Produto v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

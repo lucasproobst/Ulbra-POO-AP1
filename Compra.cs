@@ -10,20 +10,12 @@ namespace AP1
         public int Id { get; private set; }
         public DateTime Data { get; set; }
         public List<Produto> Produtos { get; set; } = new List<Produto>();
-    
 
-        public Compra(int id, DateTime data, Produto produto){
+        public Compra(int id, DateTime data, Produto produto)
+        {
             this.Id = id;
             this.Data = data;
             Produtos.Add(produto);
-
-        }
-
-        public Compra(int id, DateTime data, List<Produto> produtos)
-        {
-            Id = id;
-            Data = data;
-            Produtos = produtos;
         }
     }
 }

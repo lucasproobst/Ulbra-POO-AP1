@@ -9,7 +9,7 @@ namespace AP1
     {
           private readonly List<Compra> _compras = new List<Compra>();
 
-        public void RealizarCompra(List<Produto> produtos)
+        public void RealizarCompra(Produto produtos)
         {
             int id = ProximoId();
             DateTime data = DateTime.Now;
