@@ -4,11 +4,7 @@ namespace AP1
 {
     public class Program
     {
-        /*         private static readonly ProdutoRepositorio produtoRepositorio = new ProdutoRepositorio();
-                private static readonly FornecedorRepositorio fornecedorRepositorio = new FornecedorRepositorio(); */
-        private static readonly CompraRepositorio compraRepositorio = new CompraRepositorio();
-
-        public static void Main(string[] args)
+        public static void Main(string[] args, int Id)
         {
             Console.WriteLine("Bem-vindo ao sistema de compras!");
 
@@ -64,7 +60,7 @@ namespace AP1
                         /* Fornecedor fornecedor = FornecedorRepositorio.ObterPorId(1); */
                         /* Fornecedor fornecedor1 =  FornecedorRepositorio.get(); */
 
-                        Compra compra = new Compra(1, data, produto);
+                        Compra compra = new Compra(Id, data, produto);
 
                         compra.RealizarCompra(produto);
 
