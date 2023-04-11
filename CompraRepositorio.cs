@@ -7,7 +7,7 @@ namespace AP1
 {
     public class CompraRepositorio
     {
-          private readonly List<Compra> _compras = new List<Compra>();
+        private readonly List<Compra> _compras = new List<Compra>();
 
         public void RealizarCompra(Produto produtos)
         {
@@ -17,6 +17,27 @@ namespace AP1
             Compra compra = new Compra(id, data, produtos);
 
             _compras.Add(compra);
+        }
+
+        public static void ComecarCompra(int id)
+        {
+            Console.WriteLine("Informe os dados da compra:");
+            Console.WriteLine("Data:");
+            DateTime data = DateTime.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o código de barras do produto:");
+            long codBarras = long.Parse(Console.ReadLine());
+
+            Produto produto = ProdutoRepositorio.get(codBarras);
+
+            Console.WriteLine("Informe o nome do fornecedor:");
+            string nomeFornecedor = Console.ReadLine();
+
+            Compra compra = new Compra(id, data, produto);
+
+            compra.RealizarCompra(produto);
+
+            Console.WriteLine("Compra realizada com sucesso!");
         }
 
         public IEnumerable<Compra> ListarCompras()
@@ -29,7 +50,7 @@ namespace AP1
             return _compras.FirstOrDefault(c => c.Id == id);
         }
 
-        private int ProximoId()
+        public int ProximoId()
         {
             return _compras.Count + 1;
         }

@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/lucasprobst/.nuget/packages/": {}
+    "C:\\Users\\thebu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lucasprobst/Desktop/AP1/Ulbra-POO-AP1/AP1.csproj",
+      "projectUniqueName": "C:\\Users\\thebu\\Desktop\\Ulbra-POO-AP1\\AP1.csproj",
       "projectName": "AP1",
-      "projectPath": "/Users/lucasprobst/Desktop/AP1/Ulbra-POO-AP1/AP1.csproj",
-      "packagesPath": "/Users/lucasprobst/.nuget/packages/",
-      "outputPath": "/Users/lucasprobst/Desktop/AP1/Ulbra-POO-AP1/obj/",
+      "projectPath": "C:\\Users\\thebu\\Desktop\\Ulbra-POO-AP1\\AP1.csproj",
+      "packagesPath": "C:\\Users\\thebu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thebu\\Desktop\\Ulbra-POO-AP1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/lucasprobst/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\thebu\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

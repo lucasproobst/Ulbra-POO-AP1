@@ -4,7 +4,7 @@ namespace AP1
 {
     public class Program
     {
-        public static void Main(string[] args, int Id)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Bem-vindo ao sistema de compras!");
 
@@ -45,28 +45,7 @@ namespace AP1
                         break;
 
                     case 5:
-                        Console.WriteLine("Informe os dados da compra:");
-                        Console.WriteLine("Data:");
-                        DateTime data = DateTime.Parse(Console.ReadLine());
-
-                        Console.WriteLine("Informe o código de barras do produto:");
-                        long codBarras = long.Parse(Console.ReadLine());
-
-                        Produto produto = ProdutoRepositorio.get(codBarras);
-
-                        Console.WriteLine("Informe o nome do fornecedor:");
-                        string nomeFornecedor = Console.ReadLine();
-
-                        /* Fornecedor fornecedor = FornecedorRepositorio.ObterPorId(1); */
-                        /* Fornecedor fornecedor1 =  FornecedorRepositorio.get(); */
-
-                        Compra compra = new Compra(Id, data, produto);
-
-                        compra.RealizarCompra(produto);
-
-                        Console.WriteLine("Compra realizada com sucesso!");
-
-                        compra.ListarCompras();
+                        Compra.ComecarCompra(0);
                         break;
 
                     case 0:
