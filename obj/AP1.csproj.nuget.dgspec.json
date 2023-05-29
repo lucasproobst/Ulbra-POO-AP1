@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thebu\\Desktop\\POO\\AP1\\AP1.csproj": {}
+    "C:\\Users\\thebu\\Desktop\\Ulbra-POO-AP1\\AP1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thebu\\Desktop\\POO\\AP1\\AP1.csproj": {
+    "C:\\Users\\thebu\\Desktop\\Ulbra-POO-AP1\\AP1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thebu\\Desktop\\POO\\AP1\\AP1.csproj",
+        "projectUniqueName": "C:\\Users\\thebu\\Desktop\\Ulbra-POO-AP1\\AP1.csproj",
         "projectName": "AP1",
-        "projectPath": "C:\\Users\\thebu\\Desktop\\POO\\AP1\\AP1.csproj",
+        "projectPath": "C:\\Users\\thebu\\Desktop\\Ulbra-POO-AP1\\AP1.csproj",
         "packagesPath": "C:\\Users\\thebu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thebu\\Desktop\\POO\\AP1\\obj\\",
+        "outputPath": "C:\\Users\\thebu\\Desktop\\Ulbra-POO-AP1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thebu\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,22 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

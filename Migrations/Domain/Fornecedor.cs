@@ -7,17 +7,16 @@ namespace AP1
 {
     public class Fornecedor : FornecedorRepositorio
     {
-        public string nomeFornecedor;
-
         public int Id { get; set; }
-        public string Nome { get; set; }
+        public string NomeFornecedor { get; set; }
         public float Cnpj { get; set; }
+        public string Nome { get; set; }
 
-        public Fornecedor(string nomeFornecedor, float Cnpj, string Nome)
+        public Fornecedor(string nomeFornecedor, float cnpj, string nome)
         {
-            this.nomeFornecedor = nomeFornecedor;
-            this.Nome = Nome;
-            this.Cnpj = Cnpj;
+            NomeFornecedor = nomeFornecedor;
+            Cnpj = cnpj;
+            Nome = nome;
         }
     }
 }
